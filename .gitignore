@@ -2,3 +2,4 @@
 mock_vivaldi_analysis/analysis_venv
 mock_vivaldi_analysis/beams
 mock_vivaldi_analysis/*.npz
+mock_vivaldi_analysis/mock_vivaldi_analysis_with_full_HERA.ipynb
