@@ -10,4 +10,4 @@ Yellow, green: feedback.
 Power the board with a 12V supply. Connect the motor to one of the output terminals using the white and red wires. Supply 5V and ground from the Raspberry Pi or Arduino and connect this ground to the power supply ground. Finally, connect inputs 1&2 or 3&4 (depending on which output terminal is being used) to desired GPIO pins (code assumes GPIO 23 and 24).  
 
 **Using the encoder:** 
-Supply 3.3V from the Raspberry Pi / Arduino using the blue and black wires. Connect the yellow and green wires to desired GPIO pins (code assumes GPIO 17 and 22). 
+Supply 3.3V from the Raspberry Pi / Arduino using the blue and black wires. Connect the yellow and green wires to desired GPIO pins (code assumes GPIO 17 and 27). 
