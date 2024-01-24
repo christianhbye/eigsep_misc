@@ -1,4 +1,4 @@
-.venv/
+*/.venv/
 .ipynb_checkpoints
 mock_vivaldi_analysis/analysis_venv
 mock_vivaldi_analysis/beams
