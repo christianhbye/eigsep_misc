@@ -26,7 +26,7 @@ class Motor:
             The speed to start the motor at. Positive values are forward,
             negative values are backward. Must be between -255 and 255.
         """
-        direction = 1 if speed > 0 else 0
+        direction = int(speed < 0)  # fwd = 0, bwd = 1
         speed = abs(speed)
         self.motor.set_drive(motor_id, direction, speed)
 
