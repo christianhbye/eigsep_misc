@@ -37,7 +37,7 @@ if __name__ == "__main__":
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
     GPIO.setup([IN1, IN2], GPIO.OUT)
-    #GPIO.setup([FEED1, FEED2], GPIO.IN)
+    # GPIO.setup([FEED1, FEED2], GPIO.IN)
     GPIO.output(23, 0)
     GPIO.output(24, 1)
     try:
