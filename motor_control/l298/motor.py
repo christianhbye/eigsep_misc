@@ -1,8 +1,7 @@
 import time
-#import numpy as np
-#import matplotlib.pyplot as plt
-
-# import IPython
+import numpy as np
+import matplotlib.pyplot as plt
+import IPython
 from RPi import GPIO
 
 # motor driver to GPIO pin map
@@ -17,7 +16,7 @@ def plot_live(feed1, feed2, npoints=100):
     plt.ion()
     fig = plt.figure()
     ax = fig.add_axes([0, 0, 1, 1])
-    ax.set_ylim(-.1, 1.1)
+    ax.set_ylim(-1, 1.1)
     ax.grid()
     y = np.zeros((2, npoints))
     lines = []
@@ -40,11 +39,11 @@ if __name__ == "__main__":
     GPIO.setup([IN1, IN2], GPIO.OUT)
     #GPIO.setup([FEED1, FEED2], GPIO.IN)
     GPIO.output(23, 0)
-    GPIO.output(24, 0)
-#    try:
- #       plot_live(FEED1, FEED2)
- #   except KeyboardInterrupt:
- #       print("Cancelling.")
- #   finally:
-#        GPIO.cleanup()
-#    IPython.embed()
+    GPIO.output(24, 1)
+    try:
+        plot_live(FEED1, FEED2)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        IPython.embed()
+    GPIO.cleanup()
